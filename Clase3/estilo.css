@@ -1,0 +1,94 @@
+/*
+Estructura:
+
+selector{
+    propiedades 
+}
+
+
+Tipo de selectores:
+
+- etiqueta 
+- clases -> punto y el nombre de la clase
+- id -> numeral y el nombre del id
+*/
+
+/*
+COLORES:
+- colores armados por CSS
+
+rojo - verde - azul
+
+Hexadecimal -> 0-9 A-F
+RGb /RGBA -> Red - Green - Blue
+*/
+body{
+    background-color: pink;
+}
+
+.fondoVerde{
+    background-color: green;
+    color: white;/*propiedad de color tipografico*/
+    background-color: rgba(138, 43, 226,0.5);
+}
+
+button{
+    background-color: #57e1b8;
+    display: block; /* hace que el elemento se comporte como un elemento en bloque*/
+}
+
+#tituloPrincipal{
+    background-color:rgb(199, 242, 164);
+    width:400px ;/*ancho del elemento*/
+    height:50px ;/*alto del elemento*/
+    display: inline-block;
+}
+
+#botonGris{
+    background-color: gray;
+}
+
+.bordeAzul{
+    /* 
+    forma extensa
+    border-color:blue ;
+    border-width: 2px;
+    border-style: dotted; 
+    */
+    /*forma simplificada*/
+    border:blue 2px dotted;
+}
+
+.texto3{
+    width: 25%;
+    height: 40vh;/* viewheight */ 
+
+}
+#textoUnico{
+    background-image: url(./imagenes/mesa.jpg);
+    height: 140px;
+}
+
+ul{
+    width: 500px; 
+    background-color: chocolate;
+}
+
+li{
+    background-color: aquamarine;
+    width: 50%;/* cuanto mide el li 250px*/
+}
+
+.paisaje{
+    width: 300px;
+}
+
+/* .fondoVerde{
+    background-color: blueviolet;
+} */
+
+/*
+Unidades:
+
+px 
+*/
