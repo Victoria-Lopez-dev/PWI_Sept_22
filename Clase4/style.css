@@ -1,0 +1,81 @@
+/*
+ otra alternativa si preferimos no agregar el link al head del html para incorporar fuentes tipograficas:
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;600;500&display=swap'); */
+/* 
+Selector universal -> lo que coloco dentro lo aplica a todo el sitio
+
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+
+} 
+body{
+    background-color: lightblue;
+}
+
+ul{
+    list-style-type: none;
+    background-color: darkcyan;
+    padding: 10px;
+    width: 300px;
+}
+.item-menu{
+    display: inline;
+    padding: 10px;
+}
+h1{
+    background-image: url(./imagenes/perros.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    padding: 80px 20px ; 
+    margin: 40px 0px ;
+    height: 500px ;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4em;
+    text-transform:uppercase;
+    text-shadow:5px 5px whitesmoke;
+}
+
+.tarjeta{
+   max-width: 300px;
+   border: 2px solid darkgreen ;
+    margin: 50px auto;
+    box-shadow: 
+         5px 5px 10px blue,
+        -5px -5px 10px violet;
+
+
+}
+.resaltar{
+    display: inline;
+    background-color: pink;
+}
+.img-tarj{
+    width: 100%;
+}
+span{
+    background-color: yellowgreen;
+}
+#rojo{
+    background: linear-gradient(0% red,100% blue);
+}
+
+/*
+em rem 
+1em -> 16px
+2em -> 32px
+alto de mi h1 -> 80px 100px 80px -> 260px
+display: cambiar el comportamiento de la etiqueta
+padding ->relleno
+ padding: 40px 20px ;
+40px arriba y abajo 20px izq y derecha 
+
+width -> ancho
+height -> alto
+*/
