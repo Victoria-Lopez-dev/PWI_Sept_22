@@ -1,0 +1,13 @@
+*{
+    font-weight: 400;
+}
+.padre{
+    background-color: #87A2FB;
+}
+
+.hijos{
+    background-color: #f92f6f;
+    border: 2px solid #CD104D;
+    width: 300px;
+    height: 300px;
+}

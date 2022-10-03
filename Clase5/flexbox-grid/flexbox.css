@@ -1,0 +1,34 @@
+*{
+    font-size: 20px;
+}
+.padre{
+    background-color: #87A2FB;
+    height: 800px;
+    display: flex;
+    flex-direction: row;/*  indicar si los hijos se comportan como fila o columna*/
+
+    justify-content: center; 
+    /* alinear de manera horizontal(si es row) o vertical (si es column) */
+
+    align-items: flex-start; 
+    /* alinear de manera vertical( si es row) o horizontal (si es column) */
+
+    gap: 30px;
+    /* agrega distancia entre los elementos hijos*/
+
+    flex-wrap: wrap;
+    /* nos permite definir si el size de los hijos permanece o se puede alterar para que permanezca la fila o columna de los elementos*/
+    padding: 10px 20px;
+}
+
+.elemento3{
+    align-self: center;
+    
+}
+.hijos{
+    background-color: #f92f6f;
+    border: 2px solid #CD104D;
+    width: 200px;
+    height: 200px; 
+    margin: 20px;
+}
