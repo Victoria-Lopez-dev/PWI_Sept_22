@@ -8,9 +8,13 @@
     <title>Formularios</title>
 </head>
 <body>
-    <h1>Usando Formularios</h1>
-
-    <form action="" method="POST">
+    <label class="flexColumn" for="despliegue"><h1>Usando Formularios</h1> </label>
+        <input type="checkbox" id="despliegue">
+   
+    <button>click</button>
+    
+    <a href="#">este es un link</a>
+    <form  class="formulario flexColumn" action="https://formspree.io/f/mjvzrlrl" method="POST">
 
         <label for="nombreUsuario" >
             Nombre
@@ -57,14 +61,15 @@
 
         <label for="paisOrigen">
             Seleccione Pais de origen :
-            <select name="paisOrigen" id="paisOrigen" disabled>
+            <select name="paisOrigen" id="paisOrigen" required>
                 <option value="Argentina">Argentina</option>
                 <option value="Peru">Peru</option>
                 <option value="Colombia">Colombia</option>
+                <option value="Seleccionar Pais" selected disabled>Seleccione..</option>
             </select>        
         </label>
 
-        <label for="fechaNac">
+        <label for="fechaNac" disabled>
             Ingrese Fecha de nacimiento:
             <input type="date" name="fechaNac" id="fechaNac">        
         </label>
@@ -75,8 +80,9 @@
         </textarea>
 
         <input type="submit" value="Enviar" />
-        
+              
     </form>
+
 </body>
 </html>
 <!--

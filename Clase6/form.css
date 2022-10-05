@@ -1,24 +1,86 @@
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-form{
+:root{
+    --colorVioleta:yellow;
+    --distancia:10px;
+}
+.flexColumn{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
+}
+
+.formulario{
     gap: 30px;
     background-color: lightblue;
-    padding: 10px;
+    padding: var(--distancia);
 }
 
 .inputComp{
     width: 300px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: var(--distancia);
 }
-#email{
-    background-color: lightcoral;
+ #email:valid{
+    background-color: lightseagreen;
+} 
+input:invalid{
+    border: 2px solid red;
 }
 
 textarea{
     border-radius: 10px;
     height: 300px;
+    background-color: var(--colorVioleta);
+    
+}
+/* pseudoclase -> dos puntos y el nombre de la pseudoclase
+:hover -> cuando el mouse pasa por encima
+:active -> cuando clickeo o pulso algo
+*/
+button{
+    /* que no se vea
+    visibility: hidden
+    display: none; */
+    display: none;
+     padding: 20px;   
+     background-color: blue;
+}
+h1:hover{
+    color:green ;
+    background-color: var(--colorVioleta);
+}
+
+/* h1:active + button{
+    /* display: block; */
+    /* visibility: visible; 
+    background-color: cyan;
+    display: block;
+} */
+
+.inputComp:active{
+    background-color: chocolate;
+}
+
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    background-color: brown;
+}
+
+input:focus{
+    background-color: yellow;
+}
+#despliegue{
+    visibility: hidden;
+}
+#despliegue:checked+button{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    background-color: yellowgreen;
 }
