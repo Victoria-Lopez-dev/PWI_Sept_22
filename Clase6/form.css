@@ -1,0 +1,24 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.inputComp{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#email{
+    background-color: lightcoral;
+}
+
+textarea{
+    border-radius: 10px;
+    height: 300px;
+}

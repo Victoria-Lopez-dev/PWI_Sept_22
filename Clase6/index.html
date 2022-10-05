@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Usando Formularios</h1>
+
+    <form action="" method="POST">
+
+        <label for="nombreUsuario" >
+            Nombre
+            <input type="text" name="nombreUsuario" id="nombreUsuario" class="inputComp" required/>        
+        </label>
+
+
+        <label for="apellidoUsuario">
+            Apellido
+            <input type="text" name="apellido" id="apellidoUsuario" class="inputComp" required/>        
+        </label>
+
+        <label for="email">
+            Correo electronico
+            <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" class="inputComp" required/>        
+        </label>
+
+        <label for="turnoCursada"> 
+            Ingrese el turno que desee: 
+
+            <label for="tTarde">
+                Tarde
+                <input type="radio" name="turno" value="tarde" id="tTarde">        
+            </label>
+
+            <label for="tNoche">
+                Noche
+                <input type="radio" name="turno" value="noche" id="tNoche">
+            </label>
+        </label> 
+
+        <label for="cursosAInscribir">
+            Seleccione a que cursos quiere anotarse :
+
+            <label for="PWI">
+                Prog. Web Inicial
+                <input type="checkbox" name="curso" id="PWI" value="PWI">
+            </label>
+            <label for="PWA">
+                Prog. Web Avanzado 
+                <input type="checkbox" name="curso" id="PWA" value="PWA">
+            </label>
+        </label>
+
+        <label for="paisOrigen">
+            Seleccione Pais de origen :
+            <select name="paisOrigen" id="paisOrigen" disabled>
+                <option value="Argentina">Argentina</option>
+                <option value="Peru">Peru</option>
+                <option value="Colombia">Colombia</option>
+            </select>        
+        </label>
+
+        <label for="fechaNac">
+            Ingrese Fecha de nacimiento:
+            <input type="date" name="fechaNac" id="fechaNac">        
+        </label>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea name="comentariosUsuario" id="comentarios" placeholder="Comentarios...." maxlength="200">
+
+        </textarea>
+
+        <input type="submit" value="Enviar" />
+        
+    </form>
+</body>
+</html>
+<!--
+    for se relaciona con el id
+    name es para que indique la info recibida a que corresponde
+-->
+<!-- 
+    info que me llega 
+    name que coloquemos : valor igresado el usuario;
+
+    nombreUsuario: ....
+    apellido:... 
+    turno:noche
+
+-->
+<!-- metodos:
+GET -> de lectura , trae informacion
+POST -> enviar informacion para guardarla
+-->
