@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    background-color: #333333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* -------  menu principal  -------*/
+nav{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+   /* 
+    que tan cerca se encuentra el elemento
+    toma numeros enteros
+   */
+}
+.logo{
+    width: 200px;
+}
+ul{
+    list-style-type: none;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: darkgray;
+    text-align: center;
+}
+.menu li:hover{
+    background-color: lightsteelblue;
+}
+.sub-menu{
+    background-color: violet;
+    display: none;
+}
+.menuHamb{
+    display: none;
+    width: 50px;
+}
+
+.zona-menu{
+    display: flex;
+    flex-direction: column;
+}
+/* -------  seccion tarjetas  -------*/
+h2{
+    color: whitesmoke;
+    position: absolute;
+    right: 8px;
+    top: 20px;
+}
+.tarjeta{
+    width: 300px;
+    border: 2px solid gray;
+    border-radius: 8px ;
+    background-color: cornflowerblue;
+    position: relative; 
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1; 
+    padding: 2px;
+}
+section{
+    margin: 40px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+    
+}
+
+.tarjeta img{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+.boton{
+    padding: 10px;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* -------  pie de pagina  -------*/
+
+
+footer{
+    height: 400px;
+    background-color: antiquewhite;
+}
+
+.imagen{
+    position: relative;
+    left: 140px;
+    bottom: 100px;
+}
+
+.icono-fijo{
+    width: 200px;
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+}
+
+.menuHamb:active+.menu{
+    display: block;
+}
+
+/*-- sector mediaqueries ---*/
+
+/*-- tablet--*/
+@media (max-width:768px){
+    .menuHamb{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+}
+
+/* -- sector mobile ---*/
+@media(max-width:400px){
+
+    section{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .menu{
+        flex-direction: column;
+    }
+}
+
+/*
+    1rem 1em = 16px
+    2em =32px
+*/
