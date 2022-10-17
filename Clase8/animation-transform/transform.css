@@ -1,0 +1,57 @@
+*{
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+body{
+    background-color: lightblue;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.cubo{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border: 3px solid darkred;
+    transition: transform 3s;
+}
+
+/* 
+    eje horizontal : eje x
+    eje vertical: eje y
+*/
+
+.uno:hover{
+    /* 
+        translate(x,y) signos positivos : derecha y abajo; 
+        translateX() , translateY() traslada en un solo eje;
+        unidades de distancia (px, %, vh,vw,etc..)
+    */
+    transform: translate(-20px,100px);
+    background-color: yellow;
+    /*
+        transition permite que los cambios en el elemento se hagan de forma progresiva. puedo anotar la propiedad y con un espacio el tiempo en el que lo va a realizar ( en segundos : s ; o milisegundos : ms.
+        Si quiero que todas las propiedades se modifiquen de forma progresiva puedo utilizar la variante all en vez de la propiedad a transitar.
+    */
+    /* transition: all 5s; */
+}
+
+.dos:active{
+    /* escala al elemento , utiliza numeros sin unidad
+    scale(x,y), scaleX()*, scaleY() */
+    transform: scale(0.5,2);
+}
+.tres:hover{
+    /* rota al elemento, utiliza de unidad grados (deg) degree -> valores positivos gira hacia la derecha ( sentido horario); valores negativos gira hacia la izquierda(sentido antihoriario)*/
+    transform: rotate(-360deg);
+}
+.cuatro:active{
+    transform: skew(20deg);
+}
