@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css"> si lo descargo a Bootstraps-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"><!-- CDn link CSS bootstrap-->
+    <script src="https://kit.fontawesome.com/a0fd3005f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+<!-- sistema de grillas de bootstra container < row < col-->
+
+<!-- navegacion principal -->
+    <nav class="container-fluid navbar navbar-expand-lg bg-light">
+        <div class="row w-100">
+
+          <a class="col-4 navbar-brand m-0" href="#"><h1>Juana Perez</h1></a>
+          
+          <button class="col-4 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="col-6 collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Proyects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="col-2 redes d-flex align-items-center justify-content-between">
+            <a href="https://www.google.com/" target="_blank"><i class="iconoRedes fa-brands fa-linkedin "></i></a>
+
+            <a href="https://github.com/Victoria-Lopez-dev" target="_blank"><i class="iconoRedes fa-brands fa-github"></i></a>
+
+            <a href="https://www.google.com/" target="_blank"><i class="iconoRedes fa-brands fa-telegram"></i></a><!-- le agrego el <a> para vincularlo a otra pagina cuando se clickee en este; y el atributo target="_blank" para que abra en una hoja nueva-->
+
+            <a href="https://www.google.com/" target="_blank"><i class="iconoRedes fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </nav>
+
+ <!-- cabecera del sitio-->   
+      <header class="cabecera ">
+        <div class="texto">
+            <p>Soy</p>
+            <h2>full stack developer</h2>
+            <p>Base en Narnia, Argentina</p>
+            <!-- otra alternativa
+                <p>Soy <br>
+                <span>full stack developer</span> <br>
+                Base en Narnia, Argentina
+                </p>
+
+            -->
+            <div class="botonera">
+                <a href="#proyectos" class="botonConRelleno"> Ver mis trabajos</a>
+                <a href="#contacto" class="boton"> Contactame! <i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+
+        </div>
+        <!-- flecha hacia abajo-->
+        <i class="fa-solid fa-arrow-down flechaHeader"></i>
+
+        <img class="perfil" src="./image/Perfil.png" alt="perfil de persona">
+      </header>
+
+      <main>
+        <section >
+            <h2 id="About">Sobre mi..</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatem soluta consequuntur inventore repellendus, blanditiis dolores totam, itaque, ex voluptates praesentium incidunt. Ab similique quasi aspernatur officiis doloremque sed vitae?</p>
+        </section>
+        <section class="flexColumnCenter fondoGris">
+            <p>Que conocimientos tengo?</p>
+            <h2>Habilidades</h2>
+            <div class="habilidades">
+                <div class="flexColumnCenter">
+                    <i class="iconoHabilidad fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="flexColumnCenter">
+                    <i class="iconoHabilidad fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="flexColumnCenter">
+                    <i class="iconoHabilidad fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="flexColumnCenter">
+                    <i class="iconoHabilidad fa-brands fa-bootstrap"></i>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Mi Curriculum</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatem soluta consequuntur inventore repellendus, blanditiis dolores totam, itaque, ex voluptates praesentium incidunt. Ab similique quasi aspernatur officiis doloremque sed vitae?</p>
+        </section>
+        <section>
+            <h2 id="proyectos">Proyectos</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatem soluta consequuntur inventore repellendus, blanditiis dolores totam, itaque, ex voluptates praesentium incidunt. Ab similique quasi aspernatur officiis doloremque sed vitae?</p>
+        </section>
+        <section>
+            <h2 id="contacto">Contacto</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatem soluta consequuntur inventore repellendus, blanditiis dolores totam, itaque, ex voluptates praesentium incidunt. Ab similique quasi aspernatur officiis doloremque sed vitae?</p>
+        </section>
+      </main>
+
+
+    <!-- scripts de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+      <!-- <script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script> alternativa si descargo bootstrap-->
+</body>
+</html>

@@ -2,7 +2,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 :root{
-    --colorVioleta:yellow;
+    --colorVioleta:#25316D;
     --distancia:10px;
 }
 .flexColumn{

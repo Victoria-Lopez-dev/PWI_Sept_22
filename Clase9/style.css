@@ -1,0 +1,83 @@
+:root{
+    --colorAzul:#5F9DF7;
+    --colorBlanco:whitesmoke;
+    --colorNegro: black;
+    --colorGris:lightgrey;
+}
+/*----- navegacion -----*/
+
+nav{
+    height: 90px;
+    
+}
+
+.iconoRedes{
+    font-size: 20px;
+    color: var(--colorNegro);
+}
+
+
+/* ---- cabecera ------*/
+ .cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 0px;
+    background-color: var(--colorAzul);
+} 
+
+.perfil{
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid var(--colorBlanco);
+}
+h2{
+    text-transform: uppercase;
+}
+.botonera{
+    width: 100%;
+
+}
+.botonConRelleno{
+    text-decoration: none;
+    margin-right: 20px;   
+    padding: 10px;
+    background-color: var(--colorNegro);
+    color: var(--colorBlanco);
+}
+.boton{
+    color: var(--colorNegro);
+}
+.flechaHeader{
+    align-self: flex-end;
+}
+
+
+/*---- seccion sobre mi.. -------*/
+
+section{
+    padding-top: 200px;
+}
+
+/*-- habilidades--*/
+.fondoGris{
+    background-color: var(--colorGris);
+}
+.flexColumnCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habilidades{
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.iconoHabilidad{
+    font-size: 80px;
+    color: var(--colorAzul);
+}
