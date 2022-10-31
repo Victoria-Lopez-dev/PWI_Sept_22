@@ -18,6 +18,8 @@
 // "true" //string
 // '4512'
 // `undefined` //string
+
+
 // //NUMBERS o NUMEROS -> numeros se escriben sin ningun simbolo extra o detalle. Si es un numero decimal le coloco un punto (.) no coma (,)
 
 // 4512
