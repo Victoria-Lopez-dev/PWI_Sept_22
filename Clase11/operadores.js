@@ -29,7 +29,7 @@ console.log(numero2 +" " +nombre) // nos devuelve es un string
 //console.log(prompt("escriba su nombre") + " Bienvenido/a/e!!")
 
 
-// Operadores de comparacion -> devuelven booleanos
+// Operadores de Comparacion -> devuelven booleanos
 
 //mayor o menor a algo
 
@@ -80,7 +80,7 @@ edadUsuario >= 18
 
 //              true                 true
 //              18   >=   18  Y    "Japon"  == "Argentina"  
-//console.log(edadUsuario >=18 && paisUsuario == "Argentina")
+console.log(edadUsuario >=18 && paisUsuario == "Argentina")
 
 
 // OR || "o" -> me pide que ALGUNA de las operaciones se cumplan

@@ -24,3 +24,6 @@ if (edadUsuario >=18 ) {
 if(conAdulto == true){
     console.log("puede ingresar sin problema")
 }
+
+let usuarioRegistrado="Juan Perez"
+let passwordRegistrada="Usuario123"
