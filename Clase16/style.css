@@ -1,0 +1,25 @@
+#boton-desplegar{
+    background-color: lightblue;
+}
+
+ul{
+    display:none;/* para que este oculto*/
+}
+
+.mostrar{
+    display: block;
+}
+
+.fadeOut{
+    animation: opacidad 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacidad{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
