@@ -1,0 +1,14 @@
+{
+    "provincia":"Buenos Aires",
+    "Localidades":[
+        {
+            "nombre":"Merlo",
+            "habitantes":24000
+        },
+        {
+            "nombre":"Florencio Varela",
+            "habitantes":16300 
+        }
+    ],
+    "habitantesTotales":54654121
+}

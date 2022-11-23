@@ -1,0 +1,36 @@
+[{
+    "nombre":"Ana",
+    "apellido":"Perez",
+    "edad":28,
+    "cursoInscripto":["HTML y CSS",
+    "Prog. Web Inicial",
+    "Prog. Web Avanzado"],
+    "alumnoRegular":true
+},{
+    "nombre":"Martin",
+    "apellido":"Gonzalez",
+    "edad":62,
+    "cursoInscripto":["JavaScript",
+    "PHP",
+    "Prog. Web Inicial"
+]
+},{
+    "nombre":"Eva",
+    "apellido":"Longoria",
+    "edad":5,
+    "cursoInscripto":["PHP"]
+},{
+    "nombre":"Maria",
+    "apellido":"Van Dam",
+    "edad":44,
+    "cursoInscripto":[ "JavaScript",
+    "Prog. Web Avanzado"]
+},{
+    "nombre":"Juan Carlos",
+    "apellido":"Lopez",
+    "edad":39,
+    "cursoInscripto":["HTML y CSS",
+    "Prog. Web Inicial",
+    "Prog. Web Avanzado"]
+
+}]

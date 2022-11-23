@@ -28,7 +28,7 @@ botonClick.addEventListener("click",(event)=>{
     suma()
 });
 
-botonClick.addEventListener("mouseover",()=>{
+const funcionDefinida=()=>{
 
     if(flag == true){
        document.querySelector('h1').style.backgroundColor="pink"; 
@@ -38,7 +38,9 @@ botonClick.addEventListener("mouseover",()=>{
         flag=true
     }
 
-});
+}
+
+botonClick.addEventListener("mouseover",funcionDefinida);
 
 botonDesplegar.addEventListener("click",()=>{
     menu.classList.toggle("mostrar");
@@ -56,9 +58,14 @@ vinculo.addEventListener("click",(event)=>{
 
 /* definiendo el evento desde HTML y JS*/
 
+
 const agrandar=(e)=>{
     console.log(e)
     botonClick.style.padding="10px"
     console.log(20+40)
 }
 
+
+constenvioPersonal=(event)=>{
+    event.preventDefault()
+}
