@@ -1,0 +1,23 @@
+[
+    {
+        "nombre":"Maki",
+        "precio":1140,
+        "descripcion":"pescado y el arroz enrollados en una hoja de alga nori",
+        "descuento":true
+    },{
+        "nombre":"Roll",
+        "precio":1020,
+        "descripcion":"rollo de arroz y pescado junto con delicadeses arriba",
+        "descuento":false
+    },{
+        "nombre":"Niguri",
+        "precio":850,
+        "descripcion":" sushi compuesto por una bola de arroz que se moldea con la mano sobre la que se sirve un trozo de pescado crudo ",
+        "descuento":true
+    },{
+        "nombre":"Sashimi",
+        "precio":1280,
+        "descripcion":"tiras de pescado y marisco crudo dispuestas en un plato",
+        "descuento":false
+    }
+]
