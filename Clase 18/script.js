@@ -94,4 +94,5 @@ const agregarAChango=()=>{
     localStorage.setItem("productosComprados",contador)
 
 }
-
+let nombre="";
+localStorage.setItem("guardar",nombre)
