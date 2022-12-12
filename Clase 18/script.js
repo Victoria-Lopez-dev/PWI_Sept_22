@@ -95,4 +95,3 @@ const agregarAChango=()=>{
 
 }
 let nombre="";
-localStorage.setItem("guardar",nombre)
