@@ -5,3 +5,7 @@
         flex-direction: column ;
     }
 }
+
+li{
+    color: blue;
+}

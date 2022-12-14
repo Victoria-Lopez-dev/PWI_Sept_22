@@ -1,3 +1,4 @@
+
 export default function ListItemHome ({dato,otraData,info}){
   
     const mostrar =()=>{
@@ -6,7 +7,7 @@ export default function ListItemHome ({dato,otraData,info}){
    }
 
     return(
-        <li onClick={mostrar}>{dato}</li>
+        <li onClick={mostrar} className="btn btn-success" >{dato}</li>
     )
 } 
 
