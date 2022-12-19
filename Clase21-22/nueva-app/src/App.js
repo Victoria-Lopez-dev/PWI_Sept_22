@@ -1,5 +1,5 @@
 import './App.css';
-import {useState} from'react';
+import {useState,useEffect} from'react';
 import Titular from './Titular';
 import Lista from './Lista' ;
 
@@ -13,7 +13,7 @@ function App() {
   let dato=["item8","item4","otroDato"]
 
   const cambiarNombre =()=>{
-    console.log("se clickeo el boton")
+    
     //nombre="Jose"
     //uso el setter para cambiar el valor actual del estado
     if(nombre === "Ana"){
@@ -21,12 +21,25 @@ function App() {
     }else{
       setNombre("Romi")
     }
+    if(nombre === "Romi"){
+      setNombre("Ana")
+    }
   }
+
+  /* hook que nos permite ejecutar funciones en distintos momentos del ciclo de vida del componente*/
+  useEffect(()=>{
+    console.log("Se cargo/actualizo el componente")
+  },[])
+
+  /* este console.log() solo se ejecuta cuando nota que el estado nombre se modifico*/
+  useEffect(()=>{
+    console.log("El estado nombre se modifico")
+  },[nombre])
 
   return (
     <div className="App">
 
-      <h1>Hola Soy un titulo</h1>
+      <h1 onClick={cambiarNombre}>Hola Soy un titulo</h1>
 
       <Titular nombrePersona={nombre}/>
       
