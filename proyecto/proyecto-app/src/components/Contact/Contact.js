@@ -1,12 +1,14 @@
+import { Fragment } from 'react';
+
 import Navegation from '../Navegation/Navegation'
 
 export default function Contact(){
     /* Formulario no controlado*/
     
     return(
-        <div>
+        <Fragment>
             <Navegation/>
-            <div>
+            <main>
                 <h2>Contact</h2>
                 <h3>Leave us your information so we can contact you</h3>
                 <form className="row g-3 mx-4" action=''>
@@ -28,8 +30,8 @@ export default function Contact(){
                     <button type="submit" className="btn btn-primary">Sign in</button>
                     </div>
                 </form>
-           </div>
-        </div>
+           </main>
+        </Fragment>
         
     )
 } 

@@ -1,7 +1,10 @@
+import{useEffect, useState} from 'react';
+import { Fragment } from 'react';
+
 import Navegation from '../Navegation/Navegation';
 import Filters from "../FIlters/Filters";
 import SectionCards from "../SectionCards/SectionCards";
-import{useEffect, useState} from 'react';
+
 
 export default function Characters() {
     let [datos,setDatos]=useState([]);
@@ -54,9 +57,10 @@ export default function Characters() {
 
 
     return(
-        <div>
+        <Fragment>
             <Navegation />
             <section className='bg-success d-flex p-2'>
+                <h2>Filters</h2>
                 <Filters nombreFiltro="Character Alive" datoFiltro="Alive" muestraValor={mostrarValor}/> 
                 <Filters nombreFiltro="Character Dead" datoFiltro="Dead" muestraValor={mostrarValor}/> 
                 <Filters nombreFiltro="Female" datoFiltro="Female" muestraValor={mostrarValor}/> 
@@ -65,6 +69,6 @@ export default function Characters() {
             </section>
                           
             <SectionCards datos={datos} />
-        </div>
+        </Fragment>
     )
 }
