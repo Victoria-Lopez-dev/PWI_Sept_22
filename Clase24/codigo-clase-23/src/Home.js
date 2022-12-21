@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom';
 export default function Home() {
   return (
     <div className="App">
-    <a href='https://www.google.com/' >Ir a Google</a>
+    <a href='https://www.google.com/' target="_blank">Ir a Google</a>
 
         <h1>Home</h1>
 
